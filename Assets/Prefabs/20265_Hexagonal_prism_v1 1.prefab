@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 928696059164397866}
   - component: {fileID: 6022282833008891081}
   - component: {fileID: 1534219069912828138}
+  - component: {fileID: 4264103571168570417}
   m_Layer: 0
   m_Name: 20265_Hexagonal_prism_v1 1
   m_TagString: Untagged
@@ -40,7 +41,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4291152045632818146}
-  m_Mesh: {fileID: -6730188882212674202, guid: 4030fe75c40277b418a189ff1bf5d25b, type: 3}
+  m_Mesh: {fileID: 4300000, guid: c17c49f0dc9a72b478c437109a2230ac, type: 2}
 --- !u!23 &1534219069912828138
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -61,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -2582132547047298701, guid: 4030fe75c40277b418a189ff1bf5d25b, type: 3}
+  - {fileID: 2100000, guid: 798dab63c771e0348a09e7ab0f89b669, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4264103571168570417
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4291152045632818146}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: c17c49f0dc9a72b478c437109a2230ac, type: 2}
