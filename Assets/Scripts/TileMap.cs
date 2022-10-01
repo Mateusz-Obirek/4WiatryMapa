@@ -18,9 +18,22 @@ public class TileMap : MonoBehaviour{
       for (int y=0; y<mapSizeY; y++) {
           tiles[x,y] = 0;    }}
 
+tiles[2,2] = 0;
+
+
+
+GenerateMapVisual();
+}
+
+
+void  GenerateMapVisual(){
+
+  for (int x=0; x<mapSizeX; x++) {
+    for (int y=0; y<mapSizeY; y++) {
+       TileType tt = tileTypes[ tiles[x,y] ];
+
+       GameObject go = Instantiate ( tt.tileVisualPrefab, new Vector3(x,y,0),Quaternion.identity);
 
 }
-tile[2,2]=;
-
-
+}}
 }
