@@ -16,9 +16,11 @@ public class TileMap : MonoBehaviour{
 
     for (int x=0; x<mapSizeX; x++) {
       for (int y=0; y<mapSizeY; y++) {
-          tiles[x,y] = 0;    }
-  }
+          tiles[x,y] = 0;    }}
 
 
+}
+tile[2,2]=;
 
-}}
+
+}

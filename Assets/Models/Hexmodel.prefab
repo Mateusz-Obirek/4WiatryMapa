@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1534219069912828138}
   - component: {fileID: 4264103571168570417}
   m_Layer: 0
-  m_Name: 20265_Hexagonal_prism_v1 1
+  m_Name: Hexmodel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
