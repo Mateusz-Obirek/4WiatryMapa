@@ -32,7 +32,7 @@ void  GenerateMapVisual(){
     for (int z=0; z<mapSizeY; z++) {
        TileType tt = tileTypes[ tiles[x,z] ];
 
-       GameObject go = Instantiate ( tt.tileVisualPrefab, new Vector3(x,0,z),Quaternion.identity);
+       GameObject go = Instantiate ( tt.tileVisualPrefab, new Vector3(x,0,z), Quaternion.Euler(90, 0, 0));
 
 }
 }}
