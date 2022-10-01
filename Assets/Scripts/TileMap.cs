@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TileMap : MonoBehaviour{
-  TileType[] tileTypes;
+  public TileType[] tileTypes;
 
   int[,] tiles;
 
@@ -21,4 +21,4 @@ public class TileMap : MonoBehaviour{
 
 
 
-}
+}}
