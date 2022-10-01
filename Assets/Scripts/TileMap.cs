@@ -27,13 +27,14 @@ tiles[2,2] = 0;
 
 
 void  GenerateMapVisual(){
-
+  bool firstOffset = true;
   for (int x=0; x<mapSizeX; x++) {
     for (int z=0; z<mapSizeY; z++) {
-       TileType tt = tileTypes[ tiles[x,z] ];
-
-       GameObject go = Instantiate ( tt.tileVisualPrefab, new Vector3(x,0,z), Quaternion.Euler(90, 0, 0));
-
+      TileType tt = tileTypes[ tiles[x,z] ];
+      float offsetX = firstOffset?0:0.3f;
+      GameObject go = Instantiate ( tt.tileVisualPrefab, new Vector3(0.6f*z+offsetX,0,0.58f*x), Quaternion.Euler(90, 90, 0));
+    }
+    firstOffset=!firstOffset;
+  }
 }
-}}
 }
