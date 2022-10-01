@@ -22,17 +22,17 @@ tiles[2,2] = 0;
 
 
 
-GenerateMapVisual();
+  GenerateMapVisual();
 }
 
 
 void  GenerateMapVisual(){
 
   for (int x=0; x<mapSizeX; x++) {
-    for (int y=0; y<mapSizeY; y++) {
-       TileType tt = tileTypes[ tiles[x,y] ];
+    for (int z=0; z<mapSizeY; z++) {
+       TileType tt = tileTypes[ tiles[x,z] ];
 
-       GameObject go = Instantiate ( tt.tileVisualPrefab, new Vector3(x,y,0),Quaternion.identity);
+       GameObject go = Instantiate ( tt.tileVisualPrefab, new Vector3(x,0,z),Quaternion.identity);
 
 }
 }}
