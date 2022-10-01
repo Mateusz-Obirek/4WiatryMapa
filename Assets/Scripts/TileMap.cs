@@ -33,6 +33,8 @@ void  GenerateMapVisual(){
       TileType tt = tileTypes[ tiles[x,z] ];
       float offsetX = firstOffset?0:0.3f;
       GameObject go = Instantiate ( tt.tileVisualPrefab, new Vector3(0.6f*z+offsetX,0,0.58f*x), Quaternion.Euler(90, 90, 0));
+
+      go.name = $"Hex_{x}_{z}";
     }
     firstOffset=!firstOffset;
   }
